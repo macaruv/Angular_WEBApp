@@ -96,5 +96,11 @@
         }
       }
     }
+<<<<<<< HEAD
+=======
+  },
+  "cli": {
+    "analytics": "a9eb36a8-ec7e-4654-be2a-3dea5b6baa5e"
+>>>>>>> 62559a6 (Organize project files into respective folders)
   }
 }
