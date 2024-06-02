@@ -1,0 +1,23 @@
+<div class="container-fluid">
+  <div class="card">
+    <div class="card-header text-primary text-center">
+      <app-header></app-header>
+    </div>
+    <div class="card-body d-flex justify-content-center">
+      <div class="operations text-center w-100">
+        <h2 class="text-primary">Operaciones</h2>
+        <div class="form-group">
+          <label for="celsiusInput">Grados Centigrados</label>
+          <input type="number" class="form-control" id="celsiusInput" [(ngModel)]="celsius">
+        </div>
+        <button class="btn btn-primary mt-2" (click)="convertToFahrenheit()">Convertir a Fahrenheit</button>
+        <div *ngIf="fahrenheit !== null" [class]="alertClass" class="mt-2">
+          El resultado es: {{ fahrenheit }}°F
+        </div>
+      </div>
+    </div>
+    <div class="card-footer">
+      <app-footer></app-footer>
+    </div>
+  </div>
+  </div>
